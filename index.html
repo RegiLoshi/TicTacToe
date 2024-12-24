@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="choosePlayerScreen" class="fadeIn">
+        <div class="col-container">
+            <header><p>Tic Tac Toe</p></header>
+            <div class="row-container">
+                <div class="playerCard zoomIn">
+                    <p>X</p>
+                    <img src="https://media.giphy.com/media/xT77XUw1XMVGIxgove/giphy.gif" alt="player1Gif" id="player1Card" />
+                    <div class="PlayerChooserButtonContainer">
+                        <button class="choosePlayerOrBot" id="buttonPlayer1">Player</button>
+                        <button class="choosePlayerOrBot" id="buttonBot1">Bot</button>
+                    </div>
+                    <input type="text" id="player1Name" placeholder="Enter your name" class="username">
+                </div>
+                <div class="options">
+                    <p class="zoomInDelay">VS</p>
+                    <button class="hidden" id="startGame">Start Game</button>
+                </div>
+                <div class="playerCard zoomIn">
+                    <p>O</p>
+                    <img src="https://media.giphy.com/media/xT77XMx5VvvTfMsTrq/giphy.gif" alt="player2Gif" id="player2Card">
+                    <div class="PlayerChooserButtonContainer">
+                        <button class="choosePlayerOrBot" id="buttonPlayer2">Player</button>
+                        <button class="choosePlayerOrBot" id="buttonBot2">Bot</button>
+                    </div>
+                    <input type="text" id="player2Name" placeholder="Enter your name" class="username">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="gameScreen" class="hidden" >
+        <button id="return">Return</button>
+        <div class="game-grid">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+        <div class="game-info">
+            <p id="playerTurn"></p>
+            <p id="result"></p>
+        </div>    
+    </div>
+    <footer></footer>
+</body>
+</html>
